@@ -13,7 +13,6 @@ If the user could not guess the correct answer within the max_tries, then print
 """
 
 """
-
 main
     question = "what is the capital of California"
     answer = "Sacramento"
@@ -32,3 +31,22 @@ ask
 
 main
 """
+
+def main()
+    question = "What is the capital of California? "
+    answer = "Sacramento"
+    ask(question, answer)
+
+
+def ask(question, answer, max_tried=3):
+    tries = 0
+    ans = ""
+    while tries < max_tries:
+        tries += 1
+        ans = input(question) #Sacramento
+        if ans == answer:
+            print("Correct!")
+            break
+        if ans != answer:
+            print("You have used up your allotment of guesses.")
+main()
